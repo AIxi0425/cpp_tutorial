@@ -6,7 +6,7 @@
 
 /***************************/
 
-#ifdef SEG2
+#ifdef SEG1
 #include <iostream>
 using namespace std;
 
