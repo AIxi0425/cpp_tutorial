@@ -3,7 +3,9 @@
  */
 
 #define SEG3
+
 /***************************/
+
 #ifdef SEG1
 #include <iostream>
 using namespace std;
@@ -23,7 +25,9 @@ int main()
 	/* terminate the program */
 	return 0;
 }
+
 /***************************/
+
 #elif defined SEG2
 #include <iostream>
 using namespace std;
@@ -47,7 +51,9 @@ int main()
 
 	return 0;
 }
+
 /***************************/
+
 #elif defined SEG3
 #include <iostream>
 #include <string>
