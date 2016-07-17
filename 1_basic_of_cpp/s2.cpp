@@ -2,11 +2,11 @@
  * Variables and types
  */
 
-#define SEG3
+#define SEG1
 
 /***************************/
 
-#ifdef SEG1
+#ifdef SEG2
 #include <iostream>
 using namespace std;
 
