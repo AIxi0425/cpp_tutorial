@@ -5,6 +5,8 @@
 
 #define SEG2
 
+/***************************/
+
 #ifdef SEG1
 #include <iostream>
 
@@ -12,6 +14,8 @@ int main()
 {
     std::cout << "hello,world";
 }
+
+/***************************/
 
 #elif defined SEG2
 #include <iostream>
