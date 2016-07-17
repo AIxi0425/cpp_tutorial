@@ -41,7 +41,7 @@ int main()
 	
 	/* type deduction: auto and decltype */
 	int foo = 0;
-	auto bar = foo; // the same as: int bar = foo;
+	auto bar = foo;    // the same as: int bar = foo;
 	int foo = 0;
 	decltype(foo) bar; // the sme as: int bar;
 
