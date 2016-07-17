@@ -1,0 +1,7 @@
+1. git clone git@github.com:AIxi0425/XXX.git
+2. cd XXX
+3. git status
+4. git add xxx.c/cpp or any type files
+5. git commit -m "xxxxxxxxxxxx"
+6. git log
+7. git push
