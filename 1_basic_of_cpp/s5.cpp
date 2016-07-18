@@ -36,9 +36,9 @@ int main()
     cout << "Hello, " << mystr << ".\n";
     cout << "what's your favorite team? ";
     getline(cin,mystr);
-	cout << "I like " << mystr << " too!\n";
+    cout << "I like " << mystr << " too!\n";
 
-	return 0;
+    return 0;
 }
 
 /***************************/
@@ -51,19 +51,19 @@ using namespace std;
 
 int main()
 {
-	string mystr;
-	float price = 0;
-	int quantity = 0;
-
-	cout << "Enter the price: ";
-	getline(cin,mystr);
-	stringstream(mystr) >> price;
-	cout << "Enter the quantity: ";
-	getline(cin,mystr);
-	stringstream(mystr) >> quantity;
-	cout << "Total price: " << price*quantity << endl;
-	
-	return 0;	
+    string mystr;
+    float price = 0;
+    int quantity = 0;
+    
+    cout << "Enter the price: ";
+    getline(cin,mystr);
+    stringstream(mystr) >> price;
+    cout << "Enter the quantity: ";
+    getline(cin,mystr);
+    stringstream(mystr) >> quantity;
+    cout << "Total price: " << price*quantity << endl;
+    
+    return 0;	
 }
 
 #endif
