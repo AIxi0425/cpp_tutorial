@@ -43,5 +43,4 @@ int main()
 	cout << NEWLINE;
 
 }
-
 #endif
