@@ -63,7 +63,7 @@ int main()
     stringstream(mystr) >> quantity;
     cout << "Total price: " << price*quantity << endl;
     
-    return 0;	
+	return 0;	
 }
 
 #endif
