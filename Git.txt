@@ -5,3 +5,4 @@
 5. git commit -m "xxxxxxxxxxxx"
 6. git log
 7. git push
+8. git pull
