@@ -15,12 +15,12 @@ const char newline = '\n';
 
 int main()
 {
-	double r = 5.0;
-	double circle;
-
-	circle = 2 * pi * r;
-	cout << circle;
-	cout << newline;
+    double r = 5.0;
+    double circle;
+    
+    circle = 2 * pi * r;
+    cout << circle;
+    cout << newline;
 
 }
 
@@ -35,12 +35,12 @@ using namespace std;
 
 int main()
 {
-	double r = 5.0;
-	double circle;
-	
-	circle = 2 * PI * r;
-	cout << circle;
-	cout << NEWLINE;
+    double r = 5.0;
+    double circle;
+    
+    circle = 2 * PI * r;
+    cout << circle;
+    cout << NEWLINE;
 
 }
 #endif
