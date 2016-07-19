@@ -20,7 +20,7 @@ void duplicate (int &a, int &b, int &c)
 int main()
 {
     int x = 1, y = 2, z =7;
-	duplicate(x,y,z);
+    duplicate(x,y,z);
     cout << "x = " << x << ", y = " << y << ", z = " << z << endl;
     return 0;
 }
@@ -43,6 +43,6 @@ int main()
     cout << divide(12) << endl;
     cout << divide(20,4) << endl;
 
-	return 0;
+    return 0;
 }
 #endif
