@@ -2,7 +2,7 @@
  * Overloads and tmplates
  */
 
-#define SEG1
+#define SEG2
 
 /***************************/
 
@@ -31,4 +31,26 @@ int main()
 }
 
 /***************************/
+
+#elif defined SEG2
+#include <iostream>
+using namespace std;
+
+int sum (int a, int b)
+{
+    return a+b;
+}
+
+double sum (double a, double b)
+{
+    return a+b;
+}
+
+int main()
+{
+	cout << sum(10, 20) << endl;
+	cout << sum(1.5, 1.0) << endl;
+
+    return 0;
+}
 #endif
