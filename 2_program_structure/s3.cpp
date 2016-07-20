@@ -48,8 +48,8 @@ double sum (double a, double b)
 
 int main()
 {
-	cout << sum(10, 20) << endl;
-	cout << sum(1.5, 1.0) << endl;
+    cout << sum(10, 20) << endl;
+    cout << sum(1.5, 1.0) << endl;
 
     return 0;
 }
@@ -64,18 +64,18 @@ template <class T>
 T sum (T a, T b)
 {
     T result;
-	result = a + b;
-	return result;
+    result = a + b;
+    return result;
 }
 
 int main()
 {
     int i = 5, j = 6, k;
-	double f = 2.0, g = 0.5, h;
-	k = sum<int>(i, j);
-	h = sum<double>(f, g);
-	cout << k << endl;
-	cout << h << endl;
+    double f = 2.0, g = 0.5, h;
+    k = sum<int>(i, j);
+    h = sum<double>(f, g);
+    cout << k << endl;
+    cout << h << endl;
 
     return 0;
 }
