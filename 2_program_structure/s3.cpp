@@ -23,9 +23,9 @@ double operate (double a, double b)
 int main()
 {
     int x = 5, y = 2;   
-	double n = 5.0, m = 2.0;
-	cout << operate(x, y) << endl;
-	cout << operate(n, m) << endl;
+    double n = 5.0, m = 2.0;
+    cout << operate(x, y) << endl;
+    cout << operate(n, m) << endl;
 
     return 0;
 }
