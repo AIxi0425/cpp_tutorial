@@ -1,5 +1,5 @@
 /*
- *	Arrays
+ *  Arrays
  *  using space rather than tab
  */
 
@@ -18,9 +18,9 @@ int main()
 {
     for (n = 0; n < 5; n++)
     {
-	   result += foo[n];
-	}
-	cout << result << endl;
+        result += foo[n];
+    }
+    cout << result << endl;
 
     return 0;
 }
@@ -34,19 +34,19 @@ using namespace std;
 void printarray (int arg[], int length)
 {
     for (int n = 0; n < length; n++)
-	{
-	    cout << arg[n] << " ";
-	}
-	cout << endl;
+    {
+        cout << arg[n] << " ";
+    }
+    cout << endl;
 }
 
 int main()
 {
-	int firstarr[] = {1, 2, 3, 4, 5};
-	int secondarr[] = {11, 22, 33, 44, 55, 66, 77, 88, 99};
-	printarray (firstarr,5);
-	printarray (secondarr,9);
-
+    int firstarr[] = {1, 2, 3, 4, 5};
+    int secondarr[] = {11, 22, 33, 44, 55, 66, 77, 88, 99};
+    printarray (firstarr,5);
+    printarray (secondarr,9);
+    
     return 0;
 }
 
@@ -59,15 +59,15 @@ using namespace std;
 int main()
 {
     int myarray[] = {10, 20, 30};
-	for (int i = 0; i < 3; i++)
-	{
-	    ++myarray[i];
-	}
-
-	for (int elem : myarray)
-	    cout << elem << endl;
+    for (int i = 0; i < 3; i++)
+    {
+        ++myarray[i];
+    }
     
-	return 0;
+    for (int elem : myarray)
+        cout << elem << endl;
+    
+    return 0;
 }
 
 /***************************/
@@ -80,10 +80,10 @@ using namespace std;
 int main()
 {
     array<int, 3> myarray {100, 200, 300};
-	for (int i = 0; i < myarray.size(); ++i)
-	    ++myarray[i];
+    for (int i = 0; i < myarray.size(); ++i)
+        ++myarray[i];
        
-	for (int elem : myarray)
-	    cout << elem << endl;
+    for (int elem : myarray)
+        cout << elem << endl;
 }
 #endif
