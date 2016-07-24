@@ -2,7 +2,7 @@
  * Classes
  */
 
-#define SEG4
+#define SEG6
 
 /***************************/
 
@@ -11,19 +11,19 @@
 using namespace std;
 
 class Rectangle {
-	int width, heigth;
+	int width, height;
 public:
   	void set_values (int, int);
 	int area()
 	{
-		return width * heigth;
+		return width * height;
 	}
 };
 
 void Rectangle::set_values (int x, int y)
 {
 	width = x;
-	heigth = y;
+	height = y;
 }
 int main()
 {
@@ -43,19 +43,19 @@ int main()
 using namespace std;
 
 class Rectangle {
-	int width, heigth;
+	int width, height;
 public:
 	Rectangle (int, int);
 	int area ()
 	{
-		return width * heigth;
+		return width * height;
 	}
 };
 
 Rectangle::Rectangle (int x, int y)
 {
 	width = x;
-	heigth = y;
+	height = y;
 }
 
 int main()
@@ -74,26 +74,26 @@ int main()
 using namespace std;
 
 class Rectangle {
-	int width, heigth;
+	int width, height;
 public:
 	Rectangle ();
 	Rectangle (int, int);
 	int area (void)
 	{
-		return width * heigth;
+		return width * height;
 	}
 };
 
 Rectangle::Rectangle ()
 {
 	width = 5;
-	heigth = 5;
+	height = 5;
 }
 
 Rectangle::Rectangle (int x, int y)
 {
 	width = x;
-	heigth = y;
+	height = y;
 }
 
 int main()
@@ -138,5 +138,82 @@ int main()
 	cout << "qux's circumference: " << qux.circum() << endl;
 
 	return 0;
+}
+
+/***************************/
+
+#elif defined SEG5
+#include <iostream>
+using namespace std;
+
+class Circle {
+	double radius;
+public:
+	Circle (double r)
+	{
+		radius = r;
+	}
+	double area()
+	{
+		return radius * radius * 3.14;
+	}
+};
+
+class Cylinder {
+	Circle base;
+	double height;
+public:
+	Cylinder (double r, double h): base(r),height(h)
+	{
+
+	}
+	double volume ()
+	{
+		return base.area() * height;
+	}
+};
+
+int main()
+{
+	Cylinder foo (10,20);
+
+	cout << "foo's volume is " << foo.volume() << endl;
+
+	return 0;
+}
+
+/***************************/
+
+#elif defined SEG6
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+	int width, height;
+public:
+	Rectangle (int x, int y) : width(x),height(y) {}
+	int area (void)
+	{
+		return width * height;
+	}
+};
+
+int main()
+{
+	Rectangle obj(3,4);
+	Rectangle *foo;
+	foo = &obj;
+	cout << "obj's area: " << obj.area() << endl;
+	cout << "foo's area: " << foo->area() << endl;
+	Rectangle *bar;
+	bar = new Rectangle (5,6);
+	cout << "*bar's area: " << bar->area() << endl;
+	delete bar;
+	Rectangle *baz;
+	baz = new Rectangle[2] {{3,5},{4,6}};
+	cout << "baz[0]'s area: " << (baz+0)->area() << endl;
+	cout << "baz[1]'s area: " << baz[1].area() << endl;
+
+	return 0;	
 }
 #endif
