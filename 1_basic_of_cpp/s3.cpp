@@ -5,8 +5,8 @@
 #define SEG1
 
 /***************************/
-
 #ifdef SEG1
+
 #include <iostream>
 using namespace std;
 
@@ -15,18 +15,17 @@ const char newline = '\n';
 
 int main()
 {
-    double r = 5.0;
-    double circle;
-    
-    circle = 2 * pi * r;
-    cout << circle;
-    cout << newline;
-
+	double r = 5.0;
+	double circle;
+	
+	circle = 2 * pi * r;
+	cout << circle;
+	cout << newline;
 }
 
 /***************************/
-
 #elif defined SEG2
+
 #include <iostream>
 using namespace std;
 
@@ -35,12 +34,14 @@ using namespace std;
 
 int main()
 {
-    double r = 5.0;
-    double circle;
-    
-    circle = 2 * PI * r;
-    cout << circle;
-    cout << NEWLINE;
-
+	double r = 5.0;
+	double circle;
+	
+	circle = 2 * PI * r;
+	cout << circle;
+	cout << NEWLINE;
 }
+
+/***************************/
+
 #endif
