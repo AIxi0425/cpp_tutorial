@@ -1,12 +1,12 @@
 /*
- *  Pointers
+ * Pointers
  */
 
 #define SEG4
 
 /***************************/
-
 #ifdef SEG1
+
 #include <iostream>
 using namespace std;
 
@@ -29,8 +29,8 @@ int main()
 }
 
 /***************************/
-
 #elif defined SEG2
+
 #include <iostream>
 using namespace std;
 
@@ -49,12 +49,13 @@ int main()
 	{
 		cout << numbers[n] << endl;
 	}
+
 	return 0;
 }
 
 /***************************/
-
 #elif defined SEG3
+
 #include <iostream>
 using namespace std;
 
@@ -86,8 +87,8 @@ int main()
 }
 
 /***************************/
-
 #elif defined SEG4
+
 #include <iostream>
 using namespace std;
 
@@ -117,5 +118,7 @@ int main()
 
 	return 0;
 }
+
+/***************************/
 
 #endif
