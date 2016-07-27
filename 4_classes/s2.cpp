@@ -5,8 +5,8 @@
 #define SEG8
 
 /***************************/
-
 #ifdef SEG1
+
 #include <iostream>
 using namespace std;
 
@@ -38,8 +38,8 @@ int main()
 }
 
 /***************************/
-
 #elif defined SEG2
+
 #include <iostream>
 using namespace std;
 
@@ -70,8 +70,8 @@ int main()
 }
 
 /***************************/
-
 #elif defined SEG3
+
 #include <iostream>
 using namespace std;
 
@@ -98,8 +98,8 @@ int main()
 }
 
 /***************************/
-
 #elif defined SEG4
+
 #include <iostream>
 using namespace std;
 
@@ -127,8 +127,8 @@ int main()
 }
 
 /***************************/
-
 #elif defined SEG5
+
 #include <iostream>
 using namespace std;
 
@@ -152,8 +152,8 @@ int main()
 }
 
 /***************************/
-
 #elif defined SEG6
+
 #include <iostream>
 using namespace std;
 
@@ -177,8 +177,8 @@ int main()
 }
 
 /***************************/
-
 #elif defined SEG7
+
 #include <iostream>
 using namespace std;
 
@@ -202,8 +202,8 @@ int main()
 }
 
 /***************************/
-
 #elif defined SEG8
+
 #include <iostream>
 using namespace std;
 
@@ -232,10 +232,16 @@ int main()
 }
 
 /***************************/
-
 #elif defined SEG9
+
 #include <iostream>
 using namespace std;
 
+int main()
+{
+	return 0;
+}
+
+/***************************/
 
 #endif
