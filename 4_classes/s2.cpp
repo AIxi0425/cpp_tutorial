@@ -2,7 +2,7 @@
  * Classes(2)
  */
 
-#define SEG5
+#define SEG8
 
 /***************************/
 
@@ -150,4 +150,92 @@ int main()
 
 	return 0;
 }
+
+/***************************/
+
+#elif defined SEG6
+#include <iostream>
+using namespace std;
+
+class MyClass {
+	int x;
+public:
+	MyClass (int val): x(val) {}
+	const int& get() const {return x;}
+};
+
+void print (const MyClass& arg)
+{
+	cout << arg.get() << endl;
+}
+
+int main()
+{
+	MyClass foo (10);
+	print (foo);
+	return 0;
+}
+
+/***************************/
+
+#elif defined SEG7
+#include <iostream>
+using namespace std;
+
+class MyClass {
+	int x;
+public:
+	MyClass (int val): x(val) {}
+	const int& get() const {return x;}
+	int& get() {return x;}
+};
+
+int main()
+{
+	MyClass foo (10);
+	const MyClass bar (20);
+	foo.get() = 16;
+	cout << foo.get() << endl;
+	cout << bar.get() << endl;
+
+	return 0;
+}
+
+/***************************/
+
+#elif defined SEG8
+#include <iostream>
+using namespace std;
+
+template <class T>
+class mypair {
+	T a, b;
+public:
+	mypair (T first, T second) {a = first; b = second;}
+	T getmax();
+};
+
+template <class T>
+T mypair<T>::getmax()
+{
+	T retval;
+	retval = a>b? a : b;
+	return retval;
+}
+
+int main()
+{
+	mypair <int>myobject (100,74);
+	cout << myobject.getmax() << endl;
+
+	return 0;
+}
+
+/***************************/
+
+#elif defined SEG9
+#include <iostream>
+using namespace std;
+
+
 #endif
