@@ -1,3 +1,3 @@
 /*
- *  Other data types
+ * Other data types
  */
