@@ -61,8 +61,8 @@ int main()
 
 /***************************/
 #elif defined SEG3
-#include <iostream>
 
+#include <iostream>
 using namespace std;
 
 int x;
