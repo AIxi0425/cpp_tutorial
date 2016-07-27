@@ -2,7 +2,7 @@
  * Classes(2)
  */
 
-#define SEG3
+#define SEG5
 
 /***************************/
 
@@ -13,7 +13,7 @@ using namespace std;
 class CVector {
 public:
 	int x, y;
-	CVector () {};
+	CVector () {}
 	CVector (int a, int b) : x(a), y(b) {}
 	CVector operator+ (const CVector&);
 };
@@ -46,7 +46,7 @@ using namespace std;
 class CVector {
 public:
 	int x, y;
-	CVector () {};
+	CVector () {}
 	CVector (int a, int b) : x(a), y(b) {}
 };
 
@@ -97,4 +97,57 @@ int main()
 	return 0;
 }
 
+/***************************/
+
+#elif defined SEG4
+#include <iostream>
+using namespace std;
+
+class Dummy {
+public:
+	static int n;
+	Dummy ()
+	{
+		n++;
+	}
+};
+
+int Dummy::n = 0;
+
+int main()
+{
+	Dummy a;
+	Dummy b[5];
+	cout << a.n << endl;
+	Dummy *c = new Dummy;
+	cout << Dummy::n << endl;
+	delete c;
+
+	return 0;
+}
+
+/***************************/
+
+#elif defined SEG5
+#include <iostream>
+using namespace std;
+
+class Myclass {
+public:
+	int x;
+	Myclass (int val): x(val) {}
+	int get () 
+	{
+		return x;
+	}
+};
+
+int main()
+{
+	const Myclass foo(10);
+	//foo.x = 20; //not valid:  x read-only
+	cout << foo.x << endl;
+
+	return 0;
+}
 #endif
