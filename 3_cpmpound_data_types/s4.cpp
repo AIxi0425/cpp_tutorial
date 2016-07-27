@@ -1,12 +1,12 @@
 /*
- *  Dynamic memory
+ * Dynamic memory
  */
 
 #define SEG1
 
 /***************************/
-
 #ifdef SEG1
+
 #include <iostream>
 #include <new>
 using namespace std;
@@ -36,6 +36,10 @@ int main()
 			cout << p[n] << ", ";
 		delete[] p;
 	}
+
 	return 0;
 }
+
+/***************************/
+
 #endif
