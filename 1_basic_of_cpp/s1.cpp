@@ -6,8 +6,8 @@
 #define SEG2
 
 /***************************/
-
 #ifdef SEG1
+
 #include <iostream>
 
 int main()
@@ -16,8 +16,8 @@ int main()
 }
 
 /***************************/
-
 #elif defined SEG2
+
 #include <iostream>
 using namespace std;
 
@@ -25,4 +25,7 @@ int main()
 {
 	cout << "I am a C++ program";
 }
+
+/***************************/
+
 #endif
