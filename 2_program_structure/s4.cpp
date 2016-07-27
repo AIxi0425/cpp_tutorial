@@ -2,7 +2,7 @@
  * Name visibility
  */
 
- #define SEG3
+#define SEG3
 
 /***************************/
 #ifdef SEG1
