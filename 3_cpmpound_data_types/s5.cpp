@@ -5,8 +5,8 @@
 #define SEG2
 
 /***************************/
-
 #ifdef SEG1
+
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -49,8 +49,8 @@ void printmovie (movies_t movie)
 }
 
 /***************************/
-
 #elif defined SEG2
+
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -79,4 +79,7 @@ int main()
 	cout << pmovie->title;
 	cout << " ( " << (*pmovie).year << " ) " << endl;
 }
+
+/***************************/
+
 #endif
