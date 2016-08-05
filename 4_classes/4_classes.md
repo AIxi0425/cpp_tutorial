@@ -12,7 +12,7 @@
  
 #### 1.4 Pointers to classes
 
-
-
-
 ### 2. classes(II)
+#### 2.1 Overloading operators
+* C++ allows most operators to be overloaded so that their behavior can be defined for
+  just about any type, inlcuding classes.  
