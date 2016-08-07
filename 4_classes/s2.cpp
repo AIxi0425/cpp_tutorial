@@ -2,7 +2,7 @@
  * Classes(2)
  */
 
-#define SEG8
+#define SEG6
 
 /***************************/
 #ifdef SEG1
