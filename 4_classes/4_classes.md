@@ -44,3 +44,7 @@
 ## 3 Special members
 
 ### 3.1 Default constructor
+### 3.2 Destructor
+### 3.3 Copy constructor
+### 3.4 Copy assignment
+### 3.5 Move constructor and assignment 
