@@ -48,3 +48,7 @@
 ### 3.3 Copy constructor
 ### 3.4 Copy assignment
 ### 3.5 Move constructor and assignment 
+
+## 4 Friendship and inheritance
+
+### 4.1 Friend functions
