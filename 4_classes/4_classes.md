@@ -54,4 +54,3 @@
 ### 4.1 Friend functions
 ### 4.2 Friend classes
 ### 4.3 Inheritance between classes
-### 4.4 
